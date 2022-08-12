@@ -1,8 +1,136 @@
+:root {
+  --white: #f7f9f9;
+  --bg-pale: #f9f5eb;
+  --blue-grey: #607eaa;
+  --blue: #00b7ff;
+  --dark-blue: #231955;
+  --btn-green : #CFE8A9;
+  --btn-red : #E64848;
+}
+
+html,
 body {
-  padding: 50px;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+body {
+  /* padding: 50px; */
   font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  color: var(--dark-blue);
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: bolder;
+  margin: 2rem;
 }
 
 a {
-  color: #00b7ff;
+  color: var(--blue);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  /* width: 70%; */
+}
+
+label {
+  margin: 0 1rem;
+}
+input {
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../images/drone.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding-right: 5rem;
+}
+
+.homepage h1 {
+  color: var(--bg-pale);
+}
+
+.homepage a {
+  text-decoration: none;
+  background-color: var(--bg-pale);
+  color: var(--blue-grey);
+  font-size: 20px;
+  padding: 1rem 2rem;
+  margin: 2rem ;
+  border-radius: 30px;
+}
+
+.drones,
+.create-drone, 
+.update-drone {
+  display: flex;
+  flex-direction: column;
+  max-width: 1400px;
+  margin: 2rem auto;
+}
+
+.drones h2 {
+  margin: 2rem;
+}
+
+.create-btn {
+  color: var(--white);
+  background-color: var(--blue-grey);
+  border: none;
+  border-radius: 5px;
+  align-self: center;
+  text-align: center;
+  padding: 0.5rem;
+  width: 70%;
+}
+
+.delete-btn {
+  color: var(--white);
+  background-color: var(--btn-red);
+  border: none;
+  border-radius: 5px;
+  align-self: center;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.drone {
+  display: flex;
+  align-items: flex-start;
+  margin: 2rem;
+}
+
+.action-btns {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem;
+}
+
+.drone a {
+  color: var(--white);
+  background-color: var(--btn-green);
+  border: none;
+  border-radius: 5px;
+  align-self: center;
+  text-align: center;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+.add-drone {
+  text-align: center;
+  font-size: larger;
 }
